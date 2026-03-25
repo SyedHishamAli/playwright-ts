@@ -35,7 +35,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: env.baseURL,
-    headless: false,
+    headless: true,
 
     screenshot: 'only-on-failure',
 
