@@ -25,7 +25,9 @@ jobs:
               run: npx playwright install --with-deps
             
             - name: Run tests
-              run: npm run test
+              run: npm playwright test
+              env:
+                ENV: dev
             
             - name: Upload Allure Results
               uses: actions/upload-artifact@v4
