@@ -25,7 +25,7 @@ jobs:
               run: npx playwright install --with-deps
             
             - name: Run tests
-              run: npm playwright test
+              run: npx playwright test
               env:
                 ENV: dev
             
